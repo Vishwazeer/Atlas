@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atlas | Security visualization kit</title>
+    <meta name="description" content="Atlas is a kit of six typed, accessible React charts for infrastructure and data security: topology, throughput, calendar, treemap, severity and SLA. Charts that read your infrastructure like a map." />
+    <meta name="theme-color" content="#0B0D10" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F7F8F9" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Atlas | Security visualization kit" />
+    <meta property="og:description" content="Charts that read your infrastructure like a map. Six typed, keyboard-driven, token-themed React charts." />
+    <meta property="og:image" content="https://atlas-vishwajeet.vercel.app/og.png" />
+    <meta property="og:url" content="https://atlas-vishwajeet.vercel.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Atlas | Security visualization kit" />
+    <meta name="twitter:description" content="Charts that read your infrastructure like a map." />
+    <meta name="twitter:image" content="https://atlas-vishwajeet.vercel.app/og.png" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('atlas-theme');
+          if (t !== 'light' && t !== 'dark') t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Atlas is an interactive chart gallery and needs JavaScript.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
