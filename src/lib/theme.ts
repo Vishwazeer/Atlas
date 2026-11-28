@@ -25,7 +25,7 @@ export function useTheme() {
       return () => listeners.delete(cb);
     },
     read,
-    () => 'dark' as Theme,
+    () => 'light' as Theme,
   );
   const toggle = useCallback(() => applyTheme(theme === 'dark' ? 'light' : 'dark'), [theme]);
   return { theme, toggle };

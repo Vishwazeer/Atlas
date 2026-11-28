@@ -70,7 +70,5 @@ AI (Claude) drafted the component scaffolding, the seeded data generators, the t
 |---|---|
 | Unit + component tests | 40 (Vitest) |
 | E2E tests | 26 (13 specs x desktop + mobile) |
-| JS gzip, first load (react + d3 + app) | ~130 kB [measure on deploy] |
-| Lighthouse performance / accessibility | [measure] |
+| JS gzip, core bundle (react + d3 + data + app) | 129.6 kB (`vite build`) |
 | Largest DOM chart (calendar) | 365 focusable cells |
-| Topology layout settle time | [measure] |
